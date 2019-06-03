@@ -76,9 +76,29 @@ header nav {
 	flex-wrap: nowrap;
 }
 
+@media (max-width: 800px) {
+    header nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 header {
 	display: flex;
 	align-items: flex-end;
+}
+
+/* tablet-view */
+@media (max-width: 800px) {
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
 }
 
 header a {
@@ -87,6 +107,17 @@ header a {
 	text-decoration: none;
 	color: gray;
 }
+
+/* tablet-view */
+@media (max-width: 800px) {
+    header  a {
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 0px;
+        padding-top: 40px;
+    }
+}
+
 
 .title {
 	padding-top: 50px;
