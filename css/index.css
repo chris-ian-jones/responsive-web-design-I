@@ -183,6 +183,14 @@ h1 {
 	display: flex;
 }
 
+/* tablet-view */
+@media (max-width: 800px) {
+    .upper-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 
 .upper-half-left {
 	width: 432px;
@@ -203,6 +211,15 @@ h1 {
 	margin-top: 40px;
 	display: flex;
 }
+
+/* tablet-view */
+@media (max-width: 800px) {
+    .lower-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 
 .lower-third-left {
 	width: 280px;
