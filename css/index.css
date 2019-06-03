@@ -64,11 +64,24 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
-
 .all {
 	width: 876px;
 	margin: auto;
-	margin-top: 20px;
+    margin-top: 20px;
+}
+
+/* tablet-view */
+@media (max-width: 800px) {
+    .all {
+        width: 800px;
+        }
+}
+
+/* mobile-view */
+@media (max-width: 500px) {
+    .all {
+        width: 500px;
+        }
 }
 
 header nav {
@@ -76,11 +89,21 @@ header nav {
 	flex-wrap: nowrap;
 }
 
+/* tablet-view */
 @media (max-width: 800px) {
     header nav {
         width: 100%;
         display: flex;
         justify-content: space-between;
+    }
+}
+
+/* mobile-view */
+@media (max-width: 500px) {
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -97,7 +120,17 @@ header {
         align-items: center;
         margin-left: 5%;
         margin-right: 5%;
+    }
+}
 
+/* mobile-view */
+@media (max-width: 500px) {
+    header {
+        /* width: 100%; */
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
@@ -115,6 +148,33 @@ header a {
         justify-content: flex-start;
         margin-right: 0px;
         padding-top: 40px;
+    }
+}
+
+/* mobile-view */
+@media (max-width: 500px) {
+    header a {
+        width: 100%;
+        border-bottom: 1px solid grey;
+        display: flex;
+        justify-content: center;
+        margin: 0px 0px 0px 0px;
+        padding: 25px 0px 25px 0px;
+        color: grey;
+    }
+}
+
+/* mobile-view */
+@media (max-width: 500px) {
+    header a:first-of-type {
+        border-top: 1px solid grey;
+    }
+}
+
+/* mobile-view */
+@media (max-width: 500px) {
+    .logo {
+        padding-bottom: 30px;
     }
 }
 
@@ -191,6 +251,30 @@ h1 {
     }
 }
 
+/* mobile-view */
+@media (max-width: 500px) {
+    .upper-content {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* tablet-view */
+@media (max-width: 800px) {
+    .middle-img {
+        width: 800px;
+    }
+}
+
+/* mobile-view */
+@media (max-width: 500px) {
+    .middle-img {
+        width: 100%;
+    }
+}
 
 .upper-half-left {
 	width: 432px;
@@ -201,6 +285,13 @@ h1 {
 .upper-half-right {
 	width: 432px;
 	height: 100px;
+}
+
+/* mobile-view */
+@media (max-width: 500px) {
+    .upper-half-right {
+        padding-top: 20px; 
+    }
 }
 
 .middle-img {
@@ -220,10 +311,28 @@ h1 {
     }
 }
 
+/* mobile-view */
+@media (max-width: 500px) {
+    .lower-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 .lower-third-left {
 	width: 280px;
 	padding-right: 10px;
+}
+
+/* mobile-view */
+@media (max-width: 500px) {
+    .lower-third-left {
+        display: flex;
+        flex-direction: column;
+        width: 432px;
+	    padding-right: 10px;
+    }
 }
 
 .lower-third-middle {
@@ -231,12 +340,36 @@ h1 {
 	padding-right: 10px;
 }
 
+/* mobile-view */
+@media (max-width: 500px) {
+    .lower-third-middle {
+        display: flex;
+        flex-direction: column;
+        width: 432px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }  
+}
+
 .lower-third-right {
 	width: 280px;
 	padding-right: 0px;
 }
 
+/* mobile-view */
+@media (max-width: 500px) {
+    .lower-third-right {
+        display: flex;
+        flex-direction: column;
+        width: 432px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+}
+
 .contact {
+    display: flex;
+    flex-direction: column;
 	margin-top: 40px;
 	border-top: 1px solid black;
 }
@@ -249,14 +382,26 @@ h1 {
     }
 }
 
-.contact h3 {
-	margin-top: 40px;
+/* mobile-view */
+@media (max-width: 500px) {
+    .contact {
+        display: flex;
+        flex-direction: column;    
+        padding-left: 30px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
 }
 
-footer p {
-	padding-top: 30px;
-	padding-left: 345px;
-	padding-bottom: 100px;
+.contact h3 {
+    margin-top: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /*Services css*/
