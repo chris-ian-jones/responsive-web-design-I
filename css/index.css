@@ -118,7 +118,6 @@ header a {
     }
 }
 
-
 .title {
 	padding-top: 50px;
 	display: flex;
@@ -131,9 +130,30 @@ header a {
 	padding-left: 60px;
 }
 
+/* tablet-view */
+@media (max-width: 800px) {
+    .title-left-half {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        padding-top: 40px;
+        padding-left: 0px;
+        padding-bottom: 40px;
+    }
+}
+
 .title-right-half {
 	width: 379px;
 	padding-left: 90px;
+}
+
+/* tablet-view */
+@media (max-width: 800px) {
+    .title-right-half {
+        display: none;
+    }
 }
 
 h1 {
